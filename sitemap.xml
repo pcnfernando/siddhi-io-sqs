@@ -56,13 +56,13 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://wso2-extensions.github.io/siddhi-io-sqs/api/latest/</loc>
+     <lastmod>2019-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wso2-extensions.github.io/siddhi-io-sqs/api/latest/</loc>
-     <lastmod>2019-05-23</lastmod>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
     <url>
