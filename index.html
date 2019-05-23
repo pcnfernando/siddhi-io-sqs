@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -37,8 +37,8 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="./images/favicon.ico">
-      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.2">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.0">
     
     
       
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application.ba0fd1a6.css">
+      <link rel="stylesheet" href="assets/stylesheets/application.982221ab.css">
       
-        <link rel="stylesheet" href="./assets/stylesheets/application-palette.6079476c.css">
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.224b79ff.css">
       
       
         
@@ -57,18 +57,47 @@
       
     
     
-      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="assets/javascripts/modernizr.1f0bcf2b.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="./assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
     
-      <link rel="stylesheet" href="./stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-103065-28", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -117,7 +146,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://wso2-extensions.github.io/siddhi-io-sqs/" title="Siddhi IO SQS" class="md-header-nav__button md-logo">
           
-            <img src="./images/siddhi-logo-w.svg" width="24" height="24">
+            <img src="images/siddhi-logo-w.svg" width="24" height="24">
           
         </a>
       </div>
@@ -127,22 +156,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Siddhi IO SQS
-              </span>
-              <span class="md-header-nav__topic">
-                Welcome
-              </span>
-            
+            <span class="md-header-nav__topic">
+              Siddhi IO SQS
+            </span>
+            <span class="md-header-nav__topic">
+              Welcome
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -165,7 +191,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -176,20 +201,18 @@
 
   
 
-
-  <a href="https://github.com/wso2-extensions/siddhi-io-sqs/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      Siddhi-IO-SQS
+<a href="https://github.com/wso2-extensions/siddhi-io-sqs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    Siddhi-IO-SQS
+  </div>
+</a>
           </div>
         </div>
       
@@ -211,11 +234,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="https://wso2-extensions.github.io/siddhi-io-sqs/" title="Siddhi IO SQS" class="md-nav__button md-logo">
       
-        <img src="./images/siddhi-logo-w.svg" width="48" height="48">
+        <img src="images/siddhi-logo-w.svg" width="48" height="48">
       
-    </span>
+    </a>
     Siddhi IO SQS
   </label>
   
@@ -225,20 +248,18 @@
 
   
 
-
-  <a href="https://github.com/wso2-extensions/siddhi-io-sqs/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      Siddhi-IO-SQS
+<a href="https://github.com/wso2-extensions/siddhi-io-sqs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    Siddhi-IO-SQS
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -318,18 +339,6 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="api/2.0.0/" title="2.0.0" class="md-nav__link">
-      2.0.0
-    </a>
-  </li>
-
         
           
           
@@ -457,8 +466,8 @@
 
 
   <li class="md-nav__item">
-    <a href="api/latest/" title="latest" class="md-nav__link">
-      latest
+    <a href="api/.md" title="" class="md-nav__link">
+      
     </a>
   </li>
 
@@ -469,8 +478,8 @@
 
 
   <li class="md-nav__item">
-    <a href="api/.md/" title="" class="md-nav__link">
-      
+    <a href="api/latest/" title="latest" class="md-nav__link">
+      latest
     </a>
   </li>
 
@@ -571,7 +580,7 @@ and receive/publish SQS messages.</p>
 </tbody>
 </table>
 <h2 id="latest-api-docs">Latest API Docs<a class="headerlink" href="#latest-api-docs" title="Permanent link">&para;</a></h2>
-<p>Latest API Docs is <a target="_blank" href="https://wso2-extensions.github.io/siddhi-io-sqs/api/2.0.0">2.0.0</a>.</p>
+<p>Latest API Docs is <a target="_blank" href="https://wso2-extensions.github.io/siddhi-io-sqs/api/1.1.0">1.1.0</a>.</p>
 <h1 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h1>
 <h2 id="how-to-use">How to use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h2>
 <p><strong>Using the extension in <a target="_blank" href="https://github.com/wso2/product-sp">WSO2 Stream Processor</a></strong></p>
@@ -661,13 +670,13 @@ and receive/publish SQS messages.</p>
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="api/2.0.0/" title="2.0.0" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="api/1.1.0/" title="1.1.0" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                2.0.0
+                1.1.0
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -693,9 +702,8 @@ and receive/publish SQS messages.</p>
           Material for MkDocs</a>
       </div>
       
-        
   <div class="md-footer-social">
-    <link rel="stylesheet" href="./assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.css">
     
       <a href="https://github.com/wso2/siddhi" class="md-footer-social__link fa fa-github"></a>
     
@@ -703,23 +711,17 @@ and receive/publish SQS messages.</p>
     
   </div>
 
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="./assets/javascripts/application.a59e2a89.js"></script>
+      <script src="assets/javascripts/application.59145f40.js"></script>
       
-      <script>app.initialize({version:"0.17.4",url:{base:"."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
       
-        <script src="./javascripts/extra.js"></script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-103065-28","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+        <script src="javascripts/extra.js"></script>
       
     
   </body>
